@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cliente</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <header class="main-header">
+        <div class="container flex justify-between items-center py-4">
+            <div class="logo-area"><img src="assets/logo.png" alt="Company Logo" class="h-12 mr-3"><span
+                    class="tagline text-xl font-bold">Inovação em Cada Byte</span></div>
+            <nav class="main-nav">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="register.html" class="nav-link">Registrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="form-container">
+            <div class="form-logo">
+                <img src="assets/logo.png" alt="Company Logo" class="h-16">
+            </div>
+            <h2 class="form-title">Login Cliente</h2>
+            <form id="loginForm" class="space-y-6" novalidate>
+                <div>
+                    <label for="loginEmail" class="form-label">Email:</label>
+                    <input type="email" id="loginEmail" name="loginEmail" class="form-input" autofocus required>
+                    <p id="emailError" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="loginPassword" class="form-label">Senha:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" class="form-input" required>
+                    <p id="passwordError" class="error-message"></p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="button" id="clearLogin" class="btn btn-secondary">Limpar</button>
+                </div>
+                <div class="text-center text-sm mt-4">
+                    <a href="change_password.html" class="text-blue-600 hover:underline">Esqueceu a senha?</a>
+                    <span class="mx-2">|</span>
+                    <a href="register.html" class="text-blue-600 hover:underline">Novo cliente? Registre-se aqui</a>
+                </div>
+                <p id="loginMessage" class="validation-message text-center mt-4"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container text-center py-4">&copy; 2025 IT Services Ltda. Todos os direitos reservados.</div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
