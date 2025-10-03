@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa IT Services</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container flex justify-between items-center py-4">
+            <div class="logo-area">
+                <img src="assets/logo.png" alt="Company Logo" class="h-12 mr-3">
+                <span class="tagline text-xl font-bold">Inovação em cada Byte</span>
+            </div>
+            <nav class="main-nav">
+                <ul class="flex space-x-6">
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link">Cadastro</a></li>
+                    <li id="serviceRequestsLink" class="hidden"><a href="cart.html" class="nav-link">Solicitações de Serviço</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Bem-vindo à Nossa Solução de TI</h1>
+                <p>Seu parceiro de confiança para serviços de tecnologia de ponta.</p>
+            </div>
+        </section>
+
+        <section class="company-history section-padding">
+            <div class="container grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="section-title">Nossa Jornada</h2>
+                    <p>
+                        Fundado em 2025, nossa empresa de serviços de TI começou com a visão de revolucionar o
+                        cenário tecnológico, oferecendo soluções incomparáveis adaptadas a empresas de todos os
+                        tamanhos.
+                        Desde nossos humildes começos, crescemos e nos tornamos um dos principais provedores de serviços
+                        abrangentes de TI, impulsionados pela paixão pela inovação e pelo compromisso com o sucesso do
+                        cliente.
+                    </p>
+                </div>
+                <div class="video-container">
+                    <h2 class="section-title">Nossa Apresentação</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CUVplysKO_M" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="rounded-lg shadow-lg"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="founders section-padding bg-light-gray">
+            <div class="container">
+                <h2 class="text-center mb-8">Conheça Nossos Fundadores</h2>
+                <div class="overflow-x-auto">
+                    <table class="founders-table w-full">
+                        <thead>
+                            <tr>
+                                <th>Função</th>
+                                <th>Nome</th>
+                                <th>CV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CEO</td>
+                                <td>Pedro Vilas Bôas</td>
+                                <td>Com mais de 20 anos de experiência em planejamento estratégico de TI, Pedro lidera
+                                    nossa empresa com uma visão de avanço tecnológico.</td>
+                            </tr>
+                            <tr>
+                                <td>CTO</td>
+                                <td>John Doe</td>
+                                <td>Um renomado especialista em arquitetura de software, John é o cérebro técnico por
+                                    trás de nossas ofertas de serviços inovadores.</td>
+                            </tr>
+                            <tr>
+                                <td>COO</td>
+                                <td>Claire Frost</td>
+                                <td>Claire traz uma ampla experiência em gestão operacional, garantindo a entrega
+                                    eficiente de serviços e a satisfação excepcional do cliente.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery section-padding bg-light-blue">
+            <div class="container">
+                <h2 class="text-center mb-8">Nossas Instalações & Equipe</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="assets/gallery1.jpg" alt="Office space" class="gallery-thumbnail"
+                        data-full="assets/gallery1.jpg">
+                    <img src="assets/gallery2.jpg" alt="Team collaborating" class="gallery-thumbnail"
+                        data-full="assets/gallery2.jpg">
+                    <img src="assets/gallery3.jpg" alt="Server room" class="gallery-thumbnail"
+                        data-full="assets/gallery3.jpg">
+                    <img src="assets/gallery4.jpg" alt="Meeting room" class="gallery-thumbnail"
+                        data-full="assets/gallery4.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="services section-padding">
+            <div class="container">
+                <h2 class="text-center mb-8">Nossos Serviços Principais</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="service-card">
+                        <h3>Soluções em Nuvem</h3>
+                        <p>Aproveite o poder da nuvem com nossas soluções seguras e escaláveis para armazenamento de dados,
+                            computação e hospedagem de aplicativos.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cibersegurança</h3>
+                        <p>Proteja seus ativos valiosos contra ameaças em evolução com nossas robustas estratégias de
+                            cibersegurança, incluindo detecção de ameaças e resposta a incidentes.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>TI Gerenciada</h3>
+                        <p>Confie suas operações de TI à nossa equipe de especialistas, garantindo desempenho contínuo,
+                            manutenção proativa e suporte 24/7.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+            <div class="footer-contacts">
+                <h3>Fale Conosco</h3>
+                <ul>
+                    <li>Telefone: <a href="tel:+551155551234">(81) 55555-1234</a></li>
+                    <li>WhatsApp: <a href="https://wa.me/5511987654321" target="_blank">(81) 98765-4321</a></li>
+                    <li>Email: <a href="mailto:contact@itservices.com">contact@itservices.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h3>Onde Estamos</h3>
+                <p>Avenida Tech, 123 Suite 456</p>
+                <p>Cidade da Inovação, Estado, 12345</p>
+                <p>Brasil</p>
+            </div>
+            <div class="footer-payments">
+                <h3>Métodos de Pagamento</h3>
+                <div class="payment-icons flex flex-wrap gap-2"><img src="assets/payment_visa.png" alt="Visa"
+                        class="h-8"><img src="assets/payment_mastercard.png" alt="Mastercard" class="h-8"><img
+                        src="assets/payment_amex.png" alt="American Express" class="h-8"><img
+                        src="assets/payment_paypal.png" alt="PayPal" class="h-8"></div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-4 border-t border-gray-700">&copy; 2025 IT Services Ltda. Todos os direitos reservados.</div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
